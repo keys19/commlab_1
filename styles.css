@@ -1,0 +1,372 @@
+body {
+    max-width: 100%;
+    position: relative; 
+    height: 100%;
+    overflow-x: hidden; /*so the screen doesnt have blank space on scrolling left*/
+}
+
+
+/* The first screen when website is opened */
+.header {
+    background-image: url(./img/headerfd.png);
+    /* background-color:  #F6F6E9; */
+    color: #f7f3f3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-align: center;
+   background-repeat: no-repeat;
+}
+
+.text-container {
+    flex: 1; /* Adjust the flex values as needed */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 205px;
+    margin-top: 365px;
+}
+
+.header-img-container {
+    flex: 1; /* Adjust the flex values as needed */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; /* Pushing the image to the right */
+    margin-right: 100px;
+}
+
+/* Appreciation Archive title */
+.header h1 {
+    font-size: 100px;
+    margin: 0;
+    font-family: 'Noto Serif Display', serif;
+}
+
+/* the girl image */
+.header img {
+    height: 330px;
+    width: 350px;
+    margin-top: 60%;
+    margin-right: 20%;
+}
+
+    /* margin-left: 60px;}  */
+
+
+/* black navbar */
+    .navbar {
+        /* text-align: center; */
+        width: 100%;
+        background-color: #000;
+        overflow: auto;
+        justify-content: center;
+        position:absolute
+        
+    }  
+
+    /* navbar links */
+        .navbar a {
+            display: inline-block; /* Change from float to inline-block */
+            text-align: center;
+            padding: 12px;
+            color: white;
+            text-decoration: none;
+            font-size: 17px;
+        }
+  
+  
+    /* Navbar links on mouse-over */
+    .navbar a:hover {
+        background-color:  #c7ddcc;
+        color: #000;
+    }
+
+    .navbar ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0; /* Remove default margin to center the navbar horizontally */
+    }
+    .navbar li {
+        display: inline-block;
+        margin: 0;}
+
+
+    /* Section1 */
+    /* Inspiration/Story section is a flexbox of text & gratitude image */
+        .flex-container1 {
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: space-between;
+            align-items: center; /* Align items vertically in the middle */
+        }
+         
+        .info{
+            padding: 40px;
+            padding-left: 80px;
+            padding-right: 80px;
+            background-color:#FFFFFF;
+            font-family: 'Noto Serif Display', serif;
+            color: black;
+            font-size: 28px;
+        line-height: 48px;}
+        .info h2{text-align: center;padding-bottom: 10px;}
+        .info p{font-size: 25px;}
+
+        /* text flexbox but css is in info class */
+        .text {
+            flex: 5.25; 
+        }
+  
+        
+        /* .info-container1
+        {
+            display: flex;
+            align-items: center;
+            padding: 20px;
+        } */
+
+
+/* Section2 */
+/* Gratitude journal photo carousel */
+
+/* #section2
+{
+    padding-top: 20px;
+    background-color: #A3D8F4;
+    max-height: 100%; 
+    display: flex;
+    justify-content: flex-end;
+    background-image: linear-gradient(#FEA1A1,#FBC31A);
+} */
+    /* Carousel flexbox container */
+        /* .container { */
+            /* background-image: linear-gradient(#FEA1A1,#FBC31A); */
+            /* flex: 4.75;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh; /* 100% of viewport height 
+        } */
+
+        /* .flex-container3 {
+            flex: 4.75;
+            max-height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+        } */
+
+        /*.carousel-text {
+            flex: 1;
+            /* padding: 20px; 
+            text-align: center;
+        }*/
+
+        /* Additional styling for carousel text */
+        /* .carousel-text h2 {
+            margin-bottom: 10px;
+            font-size: 70px;
+            font-family: 'Gorditas', cursive;
+            
+        } */
+         
+        /* .carousel-text p {
+            padding: 10px;
+            font-size: 26px;
+        } */
+        
+        .carousel-images {
+            flex: 4.75;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            width: 100%;
+            position: relative;
+            max-height: 100%;
+        }
+
+        /* images in the carousel */
+        .mySlides img {
+            max-width: 420;
+            max-height: 600px; /*Ensure images don't exceed the container height*/
+            object-fit: cover;
+            /* border-radius: 30px; */
+        }
+
+        .slideshow-controls {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 100%;
+        }
+
+        /* < */
+        .prev { 
+            font-size: 50px;
+            cursor: pointer;
+            display: inline-block;
+            margin-left: 0vw;
+        }
+        /* > */
+        .next {
+            font-size: 50px;
+            cursor: pointer;
+            display: inline-block;
+            margin-left: 84vw;
+        }
+
+
+/* Styles for the sections */
+.section {
+    height: 100vh; /* Set the height of each section to viewport height */
+    margin-top: 40px; /* Add some space between sections and navbar */
+    scroll-margin-top: 50px; /* Create space for the fixed navbar */
+}
+
+/* Section3 for film */
+/* This section is a flexbox container containing, 2 flower images, 1 video and a title to the video */
+
+    #Section3
+    {
+    border-top: #72A01D solid 10px;
+    border-bottom: #72A01D solid 10px;
+    background-image: url(./img/1video.png);
+    background-size: cover; /* Adjust background size as needed */
+    background-repeat: no-repeat;
+    background-position: center center;
+    }
+    .film {
+        background-image: url(./img/film.png);
+        /* background-color:  #B9FFFC; */
+        max-width: 100%;
+        box-sizing: border-box; /* Add this property to include border within the width */
+        /* border-top: #FBC31A solid 10px;
+        border-bottom: #FBC31A solid 10px; */
+    }
+
+    /* The film heading */
+    .film h3{
+        font-size: 50px; /* Adjust the font size as needed */
+        margin: 0; /* Remove default margin on h1 element */
+        font-family: 'Noto Serif Display', serif;
+        text-align: center;
+        color:#FFFFFF ;
+        /* color: #F5EBEB; */
+        padding-top: 20px;
+        }
+
+    .film p{font-family: 'Noto Serif Display', serif;
+        padding-top: 3px;
+        text-align: center;
+        color: #F6F6E9;
+        padding-bottom: 3%;
+        font-size: 20px;
+    }
+
+    /* for video */
+    /* split into 3, 2 flowers, 1 video */
+    .flex-container {
+        
+       
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+        padding-bottom: 20px;
+    
+    }
+
+    .video-container {
+        flex-grow: 1;
+        text-align: center;
+    }
+
+    video {
+        max-width: 70%;
+        height: auto;
+        /* border-radius: 10px; */
+    }
+
+    /* flower images */
+    /* .image-left img,
+    .image-right img {
+        max-width: 100%;
+        height: auto;
+    } */
+
+    /* Section4 */
+    /* About me section: flexbox with image and description */
+    #section4 {
+        width: 100%;
+        background-color: #FEA1A1;
+    }
+    
+    .flex-container2 {
+        /* background-color: #FEA1A1; */
+        background-color: #f4f4f4;
+        display: flex;
+        justify-content: space-between; /* Arrange items with space between */
+        align-items: center;
+        text-align: start; /* Align text to the left */
+        font-family: 'Noto Serif Display', serif;
+        border-bottom: #DA004D solid 20px;
+        /* border-bottom: black solid 30px; */
+        /* padding: 40px; Add padding for spacing */
+    }
+    
+    .picture-container {
+        flex: 1; /* Let the image container grow to take available space */
+        margin-right: 20px; /*Add space between the image and text*/
+        margin: 80px;
+    }
+    
+    .picture-container img {
+        max-width: 100%;
+        height: auto;
+        /* border-radius: 50%; */
+        border: #DA004D solid 5px;
+    }
+    
+    .info-container {
+        flex: 2; /* Let the text container grow to take available space */
+        color: black;
+        /* text-align: center; Align text to the left */
+        line-height: 30px; /* Adjust line-height for better readability */
+        margin-right: 10%;
+    }
+    
+    .info-container h3 {
+        font-family: 'Noto Serif Display', serif;
+        font-size: 40px;
+        text-align: right;
+    }
+
+
+    
+    .info-container h5 {
+       
+        overflow: auto;
+    }
+    
+    .info-container p {
+        font-size: 20px;
+        text-align: right;
+        line-height: 45px;
+        margin-top: 30px;
+        /* margin-bottom: 15px; */
+    }
+    
+    .socials {
+        display: flex;
+        align-items: right; /* Vertically align icons in the center */
+        justify-content: right; /* Horizontally center icons */
+    }
+    
+    .socials img{height: 60px; width: 60px;padding: 10px;}
+    
+    
+    
+
