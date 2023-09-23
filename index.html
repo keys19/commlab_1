@@ -127,72 +127,7 @@
       
 </div>
 
-   <!-- carousel -->
-   <!-- <div class="container" id="section2">
-    <div class="flex-container3">
-        <div class="carousel-text">
-            <h2>Gratitude Journal</h2>
-            <img src="./img/grateful.png" alt=""> -->
-            <!-- <p>The Little things I'm grateful for this week</p> 
-        </div>
-        <div class="carousel-images">
-            <div class="slideshow-controls prev">
-                <a onclick="plusSlides(-1)">❮</a>
-            </div>
-            <div class="mySlides">
-                <img src="./img/cake.png" style="width: 100%">
-            </div>
-
-            <div class="mySlides">
-                <img src="./img/cat.JPG" style="width: 100%">
-            </div>
-
-            <div class="mySlides">
-                <img src="./img/sunset.png" style="width: 100%">
-            </div>
-
-            <div class="slideshow-controls next">
-                <a onclick="plusSlides(1)">❯</a>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-
-
-  <script>
-
-    let slideIndex = 1;
-    showSlides(slideIndex);
-
-    function plusSlides(n) {
-    showSlides(slideIndex += n);
-    }
-
-    function currentSlide(n) {
-    showSlides(slideIndex = n);
-    }
-
-    function showSlides(n) {
-    let i;
-    let slides = document.getElementsByClassName("mySlides");
-    let dots = document.getElementsByClassName("demo");
-    let captionText = document.getElementById("caption");
-    if (n > slides.length) {slideIndex = 1}
-    if (n < 1) {slideIndex = slides.length}
-    for (i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
-    }
-    for (i = 0; i < dots.length; i++) {
-        dots[i].className = dots[i].className.replace(" active", "");
-    }
-    slides[slideIndex-1].style.display = "block";
-    dots[slideIndex-1].className += " active";
-    captionText.innerHTML = dots[slideIndex-1].alt;
-    }
-    </script> --> 
-    
+  
 </div>
 
     <!-- section for video -->
@@ -206,7 +141,7 @@
                 </div> -->
             
                 <div class="video-container" style="flex-grow: 4;">
-                    <video width="2500" height="400" controls autoplay muted>
+                    <video width="2500" height="400" controls autoplay>
                         <source src="img/video_1.mp4" type="video/mp4">
                     </video> 
                 </div>
