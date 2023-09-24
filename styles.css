@@ -341,13 +341,13 @@ body {
     z-index: 99; /* Make sure it does not overlap */
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
-    background-image:url("img/logo.png")
-    background-size: cover; /* Set a background color */
-    color: white; /* Text color */
+    background: transparent;
+    background-image:url("img/logo2.PNG");
+    background-size: cover; /*Set a background color*/
     cursor: pointer; /* Add a mouse pointer on hover */
     padding: 15px; /* Some padding */
     /* border-radius: 10px; Rounded corners */
-    font-size: 18px; /* Increase font size */
+    
   }
   
 
