@@ -31,11 +31,3 @@
     document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
     }
 
-//Reload home page
-function reloadHomePage() {
-    // Get the current page's URL and set it as the href
-    window.location.href = window.location.href;
-    window.onload = topFunction() {
-        typeWriter();
-    };
-}
